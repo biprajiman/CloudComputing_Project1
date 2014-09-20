@@ -60,8 +60,8 @@ public class TwoWordCount {
 	public static void main(String[] args) throws Exception {
 		Configuration conf = new Configuration();
 
-		Job job = new Job(conf, "wordcount");
-		job.setJarByClass(WordCount.class);// Fix for the aws
+		Job job = new Job(conf, "twowordcount");
+		job.setJarByClass(TwoWordCount.class);// Fix for the aws
 		job.setOutputKeyClass(Text.class);
 		job.setOutputValueClass(IntWritable.class);
 
